@@ -9,6 +9,9 @@ jobs:
     name: Run pytest
     runs-on: ubuntu-latest
 
+    env:
+      PYTHONPATH: ${{ github.workspace }}/backend
+
     defaults:
       run:
         # The FastAPI application and requirements.txt are inside backend/.
@@ -33,4 +36,4 @@ jobs:
 
       # Step 4: Run pytest. The workflow fails if any test fails.
       - name: Run tests
-        run: pytest
+        run: python -m pytest
