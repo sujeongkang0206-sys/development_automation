@@ -1,0 +1,24 @@
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Pytest cache
+.pytest_cache/
+
+# Docker temporary files
+.docker/
+docker-compose.override.yml
+*.pid
+*.log
